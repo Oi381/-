@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .dashboard-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>ยินดีต้อนรับสู่ Dashboard</h1>
+        <p>คุณเข้าสู่ระบบสำเร็จ!</p>
+        <button onclick="logout()">ออกจากระบบ</button>
+    </div>
+
+    <script>
+        function logout() {
+            alert("ออกจากระบบสำเร็จ!");
+            window.location.href = "index.html"; // กลับไปหน้าล็อกอิน
+        }
+    </script>
+</body>
+</html>
